@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D2F915F254425C78540B0A4 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF67D4DEDB0BDFD4F65DDBA /* NotificationManager.swift */; };
+		56698A8667B283A6EDE67229 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C39CD6F4065B5C18221657 /* AppTheme.swift */; };
+		633AC187F43862DD84697E06 /* BirthdayReminderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D0C62891846EBD7C1308F4 /* BirthdayReminderApp.swift */; };
+		6B739BFF7AE413BE9C97B7B9 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7262A6557BE8AFA1D08AF153 /* MainTabView.swift */; };
+		765C07E5676D84809275EF94 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E8B00E0A05ACE2A62E9974 /* HomeView.swift */; };
+		8A32560085AF8F21785FF62C /* FriendFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EAB27D21F7F9DC2EE5265A /* FriendFormView.swift */; };
+		A0E454C952B9FC8ABFF63C99 /* ContactImportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942BD3F92F7032A841D0B917 /* ContactImportView.swift */; };
+		A3427E0343374AFC821219C7 /* ContactsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9E6858F7C8CC5429D9CC75 /* ContactsManager.swift */; };
+		AB8F0E79F7E25C6F43B2731E /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972770CBD2670C1EA9D0953D /* Friend.swift */; };
+		BC155DAD5289609BDD2B8379 /* FriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F6144DB8C1C4177057CD18 /* FriendsView.swift */; };
+		BFF5225580512BD558FEB7CA /* FriendDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DE89FBD2B35632FEB84A5A /* FriendDetailView.swift */; };
+		CE5B4F8B193CD96AA261448C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F96E7CC3C1BE071553E821F /* SettingsView.swift */; };
+		E0E6D4C8B9269C8FE8E43789 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC2BC47C146E9693DF53409 /* SettingsManager.swift */; };
+		EA61BB63FD640EF108ACB8DB /* FriendsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96872FEF27344CA170335AC0 /* FriendsManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		07C39CD6F4065B5C18221657 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		0D462729B6FFD9E7977BC91F /* BirthdayReminder.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = BirthdayReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16FAD00ABE8B9974EA1637D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		34D0C62891846EBD7C1308F4 /* BirthdayReminderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayReminderApp.swift; sourceTree = "<group>"; };
+		4E9E6858F7C8CC5429D9CC75 /* ContactsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsManager.swift; sourceTree = "<group>"; };
+		69E8B00E0A05ACE2A62E9974 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7262A6557BE8AFA1D08AF153 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		7CC2BC47C146E9693DF53409 /* SettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
+		7F96E7CC3C1BE071553E821F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		942BD3F92F7032A841D0B917 /* ContactImportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactImportView.swift; sourceTree = "<group>"; };
+		96872FEF27344CA170335AC0 /* FriendsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsManager.swift; sourceTree = "<group>"; };
+		96F6144DB8C1C4177057CD18 /* FriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsView.swift; sourceTree = "<group>"; };
+		972770CBD2670C1EA9D0953D /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		E1EAB27D21F7F9DC2EE5265A /* FriendFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendFormView.swift; sourceTree = "<group>"; };
+		EBF67D4DEDB0BDFD4F65DDBA /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		F6DE89FBD2B35632FEB84A5A /* FriendDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		28739C53AAF9FC8E2EA3ED0E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				972770CBD2670C1EA9D0953D /* Friend.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2CE1C00DDB99B1B4876ABB4E /* BirthdayReminder */ = {
+			isa = PBXGroup;
+			children = (
+				34D0C62891846EBD7C1308F4 /* BirthdayReminderApp.swift */,
+				16FAD00ABE8B9974EA1637D9 /* Info.plist */,
+				7BDEE713D3A80A3AA45F473E /* Managers */,
+				28739C53AAF9FC8E2EA3ED0E /* Models */,
+				2D6152B8501563DBEE0B8C7D /* Theme */,
+				2D0A3D01653EF280CB0C4524 /* Views */,
+			);
+			path = BirthdayReminder;
+			sourceTree = "<group>";
+		};
+		2D0A3D01653EF280CB0C4524 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7262A6557BE8AFA1D08AF153 /* MainTabView.swift */,
+				5D579626709D7F0A33B97401 /* Friends */,
+				C41D0BB080FA1ED37295CBBB /* Home */,
+				337B9F1A2538445624C2A61B /* Settings */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2D6152B8501563DBEE0B8C7D /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				07C39CD6F4065B5C18221657 /* AppTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		337B9F1A2538445624C2A61B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				7F96E7CC3C1BE071553E821F /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		4636685D2C6BAA337D3E9D88 = {
+			isa = PBXGroup;
+			children = (
+				2CE1C00DDB99B1B4876ABB4E /* BirthdayReminder */,
+				4B6F501BAECDA508ADD162C0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4B6F501BAECDA508ADD162C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D462729B6FFD9E7977BC91F /* BirthdayReminder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5D579626709D7F0A33B97401 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				942BD3F92F7032A841D0B917 /* ContactImportView.swift */,
+				F6DE89FBD2B35632FEB84A5A /* FriendDetailView.swift */,
+				E1EAB27D21F7F9DC2EE5265A /* FriendFormView.swift */,
+				96F6144DB8C1C4177057CD18 /* FriendsView.swift */,
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		7BDEE713D3A80A3AA45F473E /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				4E9E6858F7C8CC5429D9CC75 /* ContactsManager.swift */,
+				96872FEF27344CA170335AC0 /* FriendsManager.swift */,
+				EBF67D4DEDB0BDFD4F65DDBA /* NotificationManager.swift */,
+				7CC2BC47C146E9693DF53409 /* SettingsManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		C41D0BB080FA1ED37295CBBB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				69E8B00E0A05ACE2A62E9974 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		012CFFDC866FE5657405DA26 /* BirthdayReminder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0375CAC5934CDA25BE59E708 /* Build configuration list for PBXNativeTarget "BirthdayReminder" */;
+			buildPhases = (
+				365D5F3A86BF23DE96D83A53 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BirthdayReminder;
+			packageProductDependencies = (
+			);
+			productName = BirthdayReminder;
+			productReference = 0D462729B6FFD9E7977BC91F /* BirthdayReminder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0C5A6D41AF10D5B62B64A9E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					012CFFDC866FE5657405DA26 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6AD4AFF7F880C2C663CFFC0E /* Build configuration list for PBXProject "BirthdayReminder" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 4636685D2C6BAA337D3E9D88;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 4B6F501BAECDA508ADD162C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				012CFFDC866FE5657405DA26 /* BirthdayReminder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		365D5F3A86BF23DE96D83A53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56698A8667B283A6EDE67229 /* AppTheme.swift in Sources */,
+				633AC187F43862DD84697E06 /* BirthdayReminderApp.swift in Sources */,
+				A0E454C952B9FC8ABFF63C99 /* ContactImportView.swift in Sources */,
+				A3427E0343374AFC821219C7 /* ContactsManager.swift in Sources */,
+				AB8F0E79F7E25C6F43B2731E /* Friend.swift in Sources */,
+				BFF5225580512BD558FEB7CA /* FriendDetailView.swift in Sources */,
+				8A32560085AF8F21785FF62C /* FriendFormView.swift in Sources */,
+				EA61BB63FD640EF108ACB8DB /* FriendsManager.swift in Sources */,
+				BC155DAD5289609BDD2B8379 /* FriendsView.swift in Sources */,
+				765C07E5676D84809275EF94 /* HomeView.swift in Sources */,
+				6B739BFF7AE413BE9C97B7B9 /* MainTabView.swift in Sources */,
+				2D2F915F254425C78540B0A4 /* NotificationManager.swift in Sources */,
+				E0E6D4C8B9269C8FE8E43789 /* SettingsManager.swift in Sources */,
+				CE5B4F8B193CD96AA261448C /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		08E2347ED8B8C270BDE9B7E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = BirthdayReminder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.birthdayreminder.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		304D7AC73BDF01CEBC7F0586 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		38006AFEA261A6586470DAA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = BirthdayReminder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.birthdayreminder.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A32377A643064FE3B262D130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0375CAC5934CDA25BE59E708 /* Build configuration list for PBXNativeTarget "BirthdayReminder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08E2347ED8B8C270BDE9B7E6 /* Debug */,
+				38006AFEA261A6586470DAA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6AD4AFF7F880C2C663CFFC0E /* Build configuration list for PBXProject "BirthdayReminder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A32377A643064FE3B262D130 /* Debug */,
+				304D7AC73BDF01CEBC7F0586 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0C5A6D41AF10D5B62B64A9E /* Project object */;
+}
