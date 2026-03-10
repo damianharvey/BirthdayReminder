@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC1234567890ABCDEF123456 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC1234567890ABCDEF123457 /* Assets.xcassets */; };
 		2D2F915F254425C78540B0A4 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF67D4DEDB0BDFD4F65DDBA /* NotificationManager.swift */; };
 		56698A8667B283A6EDE67229 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C39CD6F4065B5C18221657 /* AppTheme.swift */; };
 		633AC187F43862DD84697E06 /* BirthdayReminderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D0C62891846EBD7C1308F4 /* BirthdayReminderApp.swift */; };
@@ -40,6 +41,7 @@
 		E1EAB27D21F7F9DC2EE5265A /* FriendFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendFormView.swift; sourceTree = "<group>"; };
 		EBF67D4DEDB0BDFD4F65DDBA /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		F6DE89FBD2B35632FEB84A5A /* FriendDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailView.swift; sourceTree = "<group>"; };
+		AC1234567890ABCDEF123457 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -56,6 +58,7 @@
 			children = (
 				34D0C62891846EBD7C1308F4 /* BirthdayReminderApp.swift */,
 				16FAD00ABE8B9974EA1637D9 /* Info.plist */,
+				AC1234567890ABCDEF123457 /* Assets.xcassets */,
 				7BDEE713D3A80A3AA45F473E /* Managers */,
 				28739C53AAF9FC8E2EA3ED0E /* Models */,
 				2D6152B8501563DBEE0B8C7D /* Theme */,
@@ -144,6 +147,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0375CAC5934CDA25BE59E708 /* Build configuration list for PBXNativeTarget "BirthdayReminder" */;
 			buildPhases = (
+				AC1234567890ABCDEF123458 /* Resources */,
 				365D5F3A86BF23DE96D83A53 /* Sources */,
 			);
 			buildRules = (
@@ -190,6 +194,17 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC1234567890ABCDEF123458 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC1234567890ABCDEF123456 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		365D5F3A86BF23DE96D83A53 /* Sources */ = {
