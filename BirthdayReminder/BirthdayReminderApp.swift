@@ -26,7 +26,8 @@ struct BirthdayReminderApp: App {
 
     private func configureAppearance() {
         UINavigationBar.appearance().largeTitleTextAttributes = [
-            .font: UIFont.systemFont(ofSize: 34, weight: .light)
+            .font: UIFont.systemFont(ofSize: 34, weight: .light),
+            .foregroundColor: UIColor(AppTheme.primary)
         ]
     }
 }

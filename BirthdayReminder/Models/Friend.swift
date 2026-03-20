@@ -111,6 +111,27 @@ struct Friend: Identifiable, Codable {
         self.contactIdentifier = contactIdentifier
     }
 
+    var zodiacSign: String? {
+        guard let birthday = birthday else { return nil }
+        let cal = Calendar.current
+        let m = cal.component(.month, from: birthday)
+        let d = cal.component(.day, from: birthday)
+        switch (m, d) {
+        case (3, 21...), (4, ..<20): return "Aries"
+        case (4, 20...), (5, ..<21): return "Taurus"
+        case (5, 21...), (6, ..<21): return "Gemini"
+        case (6, 21...), (7, ..<23): return "Cancer"
+        case (7, 23...), (8, ..<23): return "Leo"
+        case (8, 23...), (9, ..<23): return "Virgo"
+        case (9, 23...), (10, ..<23): return "Libra"
+        case (10, 23...), (11, ..<22): return "Scorpio"
+        case (11, 22...), (12, ..<22): return "Sagittarius"
+        case (12, 22...), (1, ..<20): return "Capricorn"
+        case (1, 20...), (2, ..<19): return "Aquarius"
+        default: return "Pisces"
+        }
+    }
+
     var avatarColor: AvatarColor {
         let index = abs(fullName.hashValue) % AvatarColor.allCases.count
         return AvatarColor.allCases[index]

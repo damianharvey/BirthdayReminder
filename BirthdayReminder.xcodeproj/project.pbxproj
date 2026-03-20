@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC1234567890ABCDEF123456 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC1234567890ABCDEF123457 /* Assets.xcassets */; };
 		2D2F915F254425C78540B0A4 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF67D4DEDB0BDFD4F65DDBA /* NotificationManager.swift */; };
 		56698A8667B283A6EDE67229 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C39CD6F4065B5C18221657 /* AppTheme.swift */; };
 		633AC187F43862DD84697E06 /* BirthdayReminderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D0C62891846EBD7C1308F4 /* BirthdayReminderApp.swift */; };
@@ -16,7 +15,9 @@
 		8A32560085AF8F21785FF62C /* FriendFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EAB27D21F7F9DC2EE5265A /* FriendFormView.swift */; };
 		A0E454C952B9FC8ABFF63C99 /* ContactImportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942BD3F92F7032A841D0B917 /* ContactImportView.swift */; };
 		A3427E0343374AFC821219C7 /* ContactsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9E6858F7C8CC5429D9CC75 /* ContactsManager.swift */; };
+		AA11BB22CC33DD44EE55FF66 /* BirthdayMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA11BB22CC33DD44EE55FF67 /* BirthdayMessageView.swift */; };
 		AB8F0E79F7E25C6F43B2731E /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972770CBD2670C1EA9D0953D /* Friend.swift */; };
+		AC1234567890ABCDEF123456 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC1234567890ABCDEF123457 /* Assets.xcassets */; };
 		BC155DAD5289609BDD2B8379 /* FriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F6144DB8C1C4177057CD18 /* FriendsView.swift */; };
 		BFF5225580512BD558FEB7CA /* FriendDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DE89FBD2B35632FEB84A5A /* FriendDetailView.swift */; };
 		CE5B4F8B193CD96AA261448C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F96E7CC3C1BE071553E821F /* SettingsView.swift */; };
@@ -26,7 +27,7 @@
 
 /* Begin PBXFileReference section */
 		07C39CD6F4065B5C18221657 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
-		0D462729B6FFD9E7977BC91F /* BirthdayReminder.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = BirthdayReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D462729B6FFD9E7977BC91F /* BirthdayReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirthdayReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16FAD00ABE8B9974EA1637D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		34D0C62891846EBD7C1308F4 /* BirthdayReminderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayReminderApp.swift; sourceTree = "<group>"; };
 		4E9E6858F7C8CC5429D9CC75 /* ContactsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsManager.swift; sourceTree = "<group>"; };
@@ -38,10 +39,11 @@
 		96872FEF27344CA170335AC0 /* FriendsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsManager.swift; sourceTree = "<group>"; };
 		96F6144DB8C1C4177057CD18 /* FriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsView.swift; sourceTree = "<group>"; };
 		972770CBD2670C1EA9D0953D /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		AA11BB22CC33DD44EE55FF67 /* BirthdayMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayMessageView.swift; sourceTree = "<group>"; };
+		AC1234567890ABCDEF123457 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1EAB27D21F7F9DC2EE5265A /* FriendFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendFormView.swift; sourceTree = "<group>"; };
 		EBF67D4DEDB0BDFD4F65DDBA /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		F6DE89FBD2B35632FEB84A5A /* FriendDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailView.swift; sourceTree = "<group>"; };
-		AC1234567890ABCDEF123457 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				69E8B00E0A05ACE2A62E9974 /* HomeView.swift */,
+				AA11BB22CC33DD44EE55FF67 /* BirthdayMessageView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -169,12 +172,6 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1600;
-				TargetAttributes = {
-					012CFFDC866FE5657405DA26 = {
-						DevelopmentTeam = "";
-						ProvisioningStyle = Automatic;
-					};
-				};
 			};
 			buildConfigurationList = 6AD4AFF7F880C2C663CFFC0E /* Build configuration list for PBXProject "BirthdayReminder" */;
 			developmentRegion = en;
@@ -221,6 +218,7 @@
 				EA61BB63FD640EF108ACB8DB /* FriendsManager.swift in Sources */,
 				BC155DAD5289609BDD2B8379 /* FriendsView.swift in Sources */,
 				765C07E5676D84809275EF94 /* HomeView.swift in Sources */,
+				AA11BB22CC33DD44EE55FF66 /* BirthdayMessageView.swift in Sources */,
 				6B739BFF7AE413BE9C97B7B9 /* MainTabView.swift in Sources */,
 				2D2F915F254425C78540B0A4 /* NotificationManager.swift in Sources */,
 				E0E6D4C8B9269C8FE8E43789 /* SettingsManager.swift in Sources */,
@@ -235,20 +233,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = CH49J2J7P4;
 				INFOPLIST_FILE = BirthdayReminder/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.birthdayreminder.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.damianharvey.birthdayreminder.app;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,20 +309,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = CH49J2J7P4;
 				INFOPLIST_FILE = BirthdayReminder/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.birthdayreminder.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.damianharvey.birthdaybell.app;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

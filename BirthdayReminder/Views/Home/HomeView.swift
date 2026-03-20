@@ -5,7 +5,6 @@ struct HomeView: View {
     @EnvironmentObject var settingsManager: SettingsManager
 
     @State private var selectedFriend: Friend?
-    @State private var showingAction = false
 
     private var upcoming: [Friend] {
         friendsManager.upcomingBirthdays(within: settingsManager.upcomingDaysToShow)
@@ -31,7 +30,6 @@ struct HomeView: View {
                                     BirthdayCard(friend: friend)
                                         .onTapGesture {
                                             selectedFriend = friend
-                                            showingAction = true
                                         }
 
                                     if index < upcoming.count - 1 {
@@ -51,12 +49,8 @@ struct HomeView: View {
                 }
             }
             .navigationBarHidden(true)
-            .confirmationDialog(
-                selectedFriend.map { $0.fullName } ?? "",
-                isPresented: $showingAction,
-                titleVisibility: .visible
-            ) {
-                contactActions
+            .sheet(item: $selectedFriend) { friend in
+                BirthdayMessageView(friend: friend)
             }
         }
     }
@@ -99,31 +93,6 @@ struct HomeView: View {
         .padding(.vertical, 64)
     }
 
-    @ViewBuilder
-    private var contactActions: some View {
-        if let friend = selectedFriend {
-            if friend.phoneNumbers.isEmpty && friend.emailAddresses.isEmpty {
-                Button("No contact information", action: {})
-                    .disabled(true)
-            } else {
-                ForEach(friend.phoneNumbers) { phone in
-                    Button("Call \(phone.number)") {
-                        open("tel://\(phone.number.filter(\.isNumber))")
-                    }
-                    Button("Text \(phone.number)") {
-                        open("sms:\(phone.number.filter(\.isNumber))")
-                    }
-                }
-                ForEach(friend.emailAddresses) { email in
-                    Button("Email \(email.email)") {
-                        open("mailto:\(email.email)")
-                    }
-                }
-            }
-            Button("Cancel", role: .cancel) {}
-        }
-    }
-
     // MARK: - Helpers
 
     private var greeting: String {
@@ -140,10 +109,6 @@ struct HomeView: View {
         return f.string(from: Date())
     }
 
-    private func open(_ urlString: String) {
-        guard let url = URL(string: urlString) else { return }
-        UIApplication.shared.open(url)
-    }
 }
 
 // MARK: - Birthday Card
