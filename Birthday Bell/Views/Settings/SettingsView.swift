@@ -11,7 +11,7 @@ struct SettingsView: View {
             ZStack {
                 AppTheme.background.ignoresSafeArea()
 
-                Form {
+                List {
                     // Notifications
                     Section {
                         HStack {
@@ -84,6 +84,7 @@ struct SettingsView: View {
                     .listRowBackground(AppTheme.surface)
                     .listRowSeparatorTint(AppTheme.divider)
                 }
+                .listStyle(.insetGrouped)
                 .scrollContentBackground(.hidden)
                 .background(AppTheme.background)
             }

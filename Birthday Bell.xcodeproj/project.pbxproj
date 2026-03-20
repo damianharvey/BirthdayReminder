@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		2D2F915F254425C78540B0A4 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF67D4DEDB0BDFD4F65DDBA /* NotificationManager.swift */; };
 		56698A8667B283A6EDE67229 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C39CD6F4065B5C18221657 /* AppTheme.swift */; };
-		633AC187F43862DD84697E06 /* BirthdayReminderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D0C62891846EBD7C1308F4 /* BirthdayReminderApp.swift */; };
+		633AC187F43862DD84697E06 /* BirthdayBellApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D0C62891846EBD7C1308F4 /* BirthdayBellApp.swift */; };
 		6B739BFF7AE413BE9C97B7B9 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7262A6557BE8AFA1D08AF153 /* MainTabView.swift */; };
 		765C07E5676D84809275EF94 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E8B00E0A05ACE2A62E9974 /* HomeView.swift */; };
 		8A32560085AF8F21785FF62C /* FriendFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EAB27D21F7F9DC2EE5265A /* FriendFormView.swift */; };
@@ -27,9 +27,9 @@
 
 /* Begin PBXFileReference section */
 		07C39CD6F4065B5C18221657 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
-		0D462729B6FFD9E7977BC91F /* BirthdayReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirthdayReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D462729B6FFD9E7977BC91F /* Birthday Bell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Birthday Bell.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16FAD00ABE8B9974EA1637D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		34D0C62891846EBD7C1308F4 /* BirthdayReminderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayReminderApp.swift; sourceTree = "<group>"; };
+		34D0C62891846EBD7C1308F4 /* BirthdayBellApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayBellApp.swift; sourceTree = "<group>"; };
 		4E9E6858F7C8CC5429D9CC75 /* ContactsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsManager.swift; sourceTree = "<group>"; };
 		69E8B00E0A05ACE2A62E9974 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		7262A6557BE8AFA1D08AF153 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
@@ -55,10 +55,10 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		2CE1C00DDB99B1B4876ABB4E /* BirthdayReminder */ = {
+		2CE1C00DDB99B1B4876ABB4E /* Birthday Bell */ = {
 			isa = PBXGroup;
 			children = (
-				34D0C62891846EBD7C1308F4 /* BirthdayReminderApp.swift */,
+				34D0C62891846EBD7C1308F4 /* BirthdayBellApp.swift */,
 				16FAD00ABE8B9974EA1637D9 /* Info.plist */,
 				AC1234567890ABCDEF123457 /* Assets.xcassets */,
 				7BDEE713D3A80A3AA45F473E /* Managers */,
@@ -66,7 +66,7 @@
 				2D6152B8501563DBEE0B8C7D /* Theme */,
 				2D0A3D01653EF280CB0C4524 /* Views */,
 			);
-			path = BirthdayReminder;
+			path = "Birthday Bell";
 			sourceTree = "<group>";
 		};
 		2D0A3D01653EF280CB0C4524 /* Views */ = {
@@ -99,7 +99,7 @@
 		4636685D2C6BAA337D3E9D88 = {
 			isa = PBXGroup;
 			children = (
-				2CE1C00DDB99B1B4876ABB4E /* BirthdayReminder */,
+				2CE1C00DDB99B1B4876ABB4E /* Birthday Bell */,
 				4B6F501BAECDA508ADD162C0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -107,7 +107,7 @@
 		4B6F501BAECDA508ADD162C0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0D462729B6FFD9E7977BC91F /* BirthdayReminder.app */,
+				0D462729B6FFD9E7977BC91F /* Birthday Bell.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -146,9 +146,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		012CFFDC866FE5657405DA26 /* BirthdayReminder */ = {
+		012CFFDC866FE5657405DA26 /* Birthday Bell */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0375CAC5934CDA25BE59E708 /* Build configuration list for PBXNativeTarget "BirthdayReminder" */;
+			buildConfigurationList = 0375CAC5934CDA25BE59E708 /* Build configuration list for PBXNativeTarget "Birthday Bell" */;
 			buildPhases = (
 				AC1234567890ABCDEF123458 /* Resources */,
 				365D5F3A86BF23DE96D83A53 /* Sources */,
@@ -157,11 +157,11 @@
 			);
 			dependencies = (
 			);
-			name = BirthdayReminder;
+			name = "Birthday Bell";
 			packageProductDependencies = (
 			);
 			productName = BirthdayReminder;
-			productReference = 0D462729B6FFD9E7977BC91F /* BirthdayReminder.app */;
+			productReference = 0D462729B6FFD9E7977BC91F /* Birthday Bell.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -173,7 +173,7 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1600;
 			};
-			buildConfigurationList = 6AD4AFF7F880C2C663CFFC0E /* Build configuration list for PBXProject "BirthdayReminder" */;
+			buildConfigurationList = 6AD4AFF7F880C2C663CFFC0E /* Build configuration list for PBXProject "Birthday Bell" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -187,7 +187,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				012CFFDC866FE5657405DA26 /* BirthdayReminder */,
+				012CFFDC866FE5657405DA26 /* Birthday Bell */,
 			);
 		};
 /* End PBXProject section */
@@ -209,7 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56698A8667B283A6EDE67229 /* AppTheme.swift in Sources */,
-				633AC187F43862DD84697E06 /* BirthdayReminderApp.swift in Sources */,
+				633AC187F43862DD84697E06 /* BirthdayBellApp.swift in Sources */,
 				A0E454C952B9FC8ABFF63C99 /* ContactImportView.swift in Sources */,
 				A3427E0343374AFC821219C7 /* ContactsManager.swift in Sources */,
 				AB8F0E79F7E25C6F43B2731E /* Friend.swift in Sources */,
@@ -236,13 +236,14 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CH49J2J7P4;
-				INFOPLIST_FILE = BirthdayReminder/Info.plist;
+				INFOPLIST_FILE = "Birthday Bell/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Birthday Bell";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.damianharvey.birthdayreminder.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.damianharvey.birthdaybell.app;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -312,7 +313,8 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CH49J2J7P4;
-				INFOPLIST_FILE = BirthdayReminder/Info.plist;
+				INFOPLIST_FILE = "Birthday Bell/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Birthday Bell";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -391,7 +393,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0375CAC5934CDA25BE59E708 /* Build configuration list for PBXNativeTarget "BirthdayReminder" */ = {
+		0375CAC5934CDA25BE59E708 /* Build configuration list for PBXNativeTarget "Birthday Bell" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				08E2347ED8B8C270BDE9B7E6 /* Debug */,
@@ -400,7 +402,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		6AD4AFF7F880C2C663CFFC0E /* Build configuration list for PBXProject "BirthdayReminder" */ = {
+		6AD4AFF7F880C2C663CFFC0E /* Build configuration list for PBXProject "Birthday Bell" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A32377A643064FE3B262D130 /* Debug */,

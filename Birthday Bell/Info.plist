@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>BirthdayReminder</string>
+	<string>BirthdayBell</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -21,7 +21,7 @@
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>NSContactsUsageDescription</key>
-	<string>Used to import friends' birthdays and contact details.</string>
+	<string>Used to import friends&apos; birthdays and contact details.</string>
 	<key>NSUserNotificationsUsageDescription</key>
 	<string>Used to remind you about upcoming birthdays.</string>
 	<key>UILaunchStoryboardName</key>

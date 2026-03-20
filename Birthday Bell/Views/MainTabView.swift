@@ -92,10 +92,6 @@ private struct TabBarButton: View {
     var body: some View {
         Button(action: action) {
             VStack(spacing: 6) {
-                Capsule()
-                    .fill(isSelected ? Color(hex: "6B8F71") : Color.clear)
-                    .frame(width: 24, height: 3)
-
                 ZStack(alignment: .topTrailing) {
                     Image(systemName: icon)
                         .font(.system(size: 20, weight: isSelected ? .regular : .light))
@@ -117,6 +113,10 @@ private struct TabBarButton: View {
                             .offset(x: 8, y: -4)
                     }
                 }
+
+                Capsule()
+                    .fill(isSelected ? Color(hex: "6B8F71") : Color.clear)
+                    .frame(width: 24, height: 3)
             }
             .frame(maxWidth: .infinity)
             .contentShape(Rectangle())

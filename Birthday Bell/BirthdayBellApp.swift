@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct BirthdayReminderApp: App {
+struct BirthdayBellApp: App {
     @StateObject private var friendsManager  = FriendsManager()
     @StateObject private var settingsManager = SettingsManager()
 
@@ -27,6 +27,9 @@ struct BirthdayReminderApp: App {
     private func configureAppearance() {
         UINavigationBar.appearance().largeTitleTextAttributes = [
             .font: UIFont.systemFont(ofSize: 34, weight: .light),
+            .foregroundColor: UIColor(AppTheme.primary)
+        ]
+        UINavigationBar.appearance().titleTextAttributes = [
             .foregroundColor: UIColor(AppTheme.primary)
         ]
     }

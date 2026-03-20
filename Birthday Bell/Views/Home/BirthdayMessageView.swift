@@ -18,6 +18,7 @@ struct BirthdayMessageView: View {
     @State private var mode: MessageMode = .simple
     @State private var message: String = ""
     @State private var isGenerating = false
+    @State private var showCopied = false
     @Environment(\.dismiss) private var dismiss
 
     private var modelAvailable: Bool {
@@ -46,9 +47,25 @@ struct BirthdayMessageView: View {
                         .padding(.horizontal, 20)
                         .padding(.bottom, 20)
 
-                    actionBar
+                        actionBar
                         .padding(.horizontal, 20)
                         .padding(.bottom, 28)
+                }
+
+                // Copy toast
+                if showCopied {
+                    VStack {
+                        Spacer()
+                        Text("Message copied to clipboard")
+                            .font(.system(size: 13, weight: .medium))
+                            .foregroundColor(.white)
+                            .padding(.horizontal, 16)
+                            .padding(.vertical, 10)
+                            .background(AppTheme.primary.opacity(0.85))
+                            .clipShape(Capsule())
+                            .transition(.opacity.combined(with: .move(edge: .bottom)))
+                            .padding(.bottom, 80)
+                    }
                 }
             }
             .navigationTitle(friend.fullName)
@@ -132,6 +149,10 @@ struct BirthdayMessageView: View {
 
             Button {
                 UIPasteboard.general.string = message
+                withAnimation(.easeInOut(duration: 0.2)) { showCopied = true }
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                    withAnimation(.easeInOut(duration: 0.2)) { showCopied = false }
+                }
             } label: {
                 Image(systemName: "doc.on.doc")
                     .font(.system(size: 22))
@@ -235,7 +256,7 @@ struct BirthdayMessageView: View {
         case .simple:
             return ""
         case .romantic:
-            return "Write a warm, heartfelt birthday message for \(name), who is a \(sign). Make it poetic and sincere, 2–3 sentences. Reply with only the message, no preamble."
+            return "Write a warm, heartfelt birthday message for \(name), who is a \(sign). Make it poetic and sincere, 2–3 sentences. End with a single relevant emoji. Reply with only the message, no preamble."
         case .haiku:
             return "Write a birthday haiku for \(name), a \(sign) born in \(month). Stick strictly to 5-7-5 syllables. Reply with only the haiku, no preamble."
         case .limerick:
