@@ -10,6 +10,14 @@ struct HomeView: View {
         friendsManager.upcomingBirthdays(within: settingsManager.upcomingDaysToShow)
     }
 
+    private var todayFriends: [Friend] {
+        upcoming.filter { $0.daysUntilBirthday == 0 }
+    }
+
+    private var futureFriends: [Friend] {
+        upcoming.filter { ($0.daysUntilBirthday ?? 1) > 0 }
+    }
+
     var body: some View {
         NavigationStack {
             ZStack {
@@ -25,23 +33,17 @@ struct HomeView: View {
                         if upcoming.isEmpty {
                             emptyState
                         } else {
-                            VStack(spacing: 0) {
-                                ForEach(Array(upcoming.enumerated()), id: \.element.id) { index, friend in
-                                    BirthdayCard(friend: friend)
-                                        .onTapGesture {
-                                            selectedFriend = friend
-                                        }
-
-                                    if index < upcoming.count - 1 {
-                                        Divider()
-                                            .background(AppTheme.divider)
-                                            .padding(.leading, 88)
-                                    }
-                                }
+                            if !todayFriends.isEmpty {
+                                sectionHeader("Message Today")
+                                cardList(todayFriends, showDots: true)
                             }
-                            .background(AppTheme.surface)
-                            .clipShape(RoundedRectangle(cornerRadius: 16))
-                            .padding(.horizontal, 16)
+
+                            if !futureFriends.isEmpty {
+                                if !todayFriends.isEmpty {
+                                    sectionHeader("Upcoming")
+                                }
+                                cardList(futureFriends, showDots: false)
+                            }
                         }
 
                         Spacer(minLength: 40)
@@ -56,6 +58,44 @@ struct HomeView: View {
     }
 
     // MARK: - Sub-views
+
+    private func sectionHeader(_ title: String) -> some View {
+        Text(title)
+            .font(.system(size: 12, weight: .medium))
+            .foregroundColor(AppTheme.secondary)
+            .textCase(.uppercase)
+            .tracking(1.5)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(.horizontal, 24)
+            .padding(.top, 20)
+            .padding(.bottom, 8)
+    }
+
+    private func cardList(_ friends: [Friend], showDots: Bool) -> some View {
+        VStack(spacing: 0) {
+            ForEach(Array(friends.enumerated()), id: \.element.id) { index, friend in
+                BirthdayCard(
+                    friend: friend,
+                    showDot: showDots && !friendsManager.hasBeenMessaged(friend)
+                )
+                .onTapGesture {
+                    if friend.daysUntilBirthday == 0 {
+                        friendsManager.markMessaged(friend)
+                    }
+                    selectedFriend = friend
+                }
+
+                if index < friends.count - 1 {
+                    Divider()
+                        .background(AppTheme.divider)
+                        .padding(.leading, 98)
+                }
+            }
+        }
+        .background(AppTheme.surface)
+        .clipShape(RoundedRectangle(cornerRadius: 16))
+        .padding(.horizontal, 16)
+    }
 
     private var header: some View {
         VStack(alignment: .leading, spacing: 4) {
@@ -115,9 +155,20 @@ struct HomeView: View {
 
 struct BirthdayCard: View {
     let friend: Friend
+    var showDot: Bool = false
 
     var body: some View {
-        HStack(spacing: 16) {
+        HStack(spacing: 0) {
+            // Fixed-width dot column keeps all cards aligned
+            ZStack {
+                if showDot {
+                    Circle()
+                        .fill(Color(.systemBlue))
+                        .frame(width: 10, height: 10)
+                }
+            }
+            .frame(width: 20)
+
             AvatarView(friend: friend, size: 50)
 
             VStack(alignment: .leading, spacing: 3) {
@@ -138,12 +189,14 @@ struct BirthdayCard: View {
                     }
                 }
             }
+            .padding(.leading, 16)
 
             Spacer()
 
             daysLabel
         }
-        .padding(.horizontal, 20)
+        .padding(.leading, 8)
+        .padding(.trailing, 20)
         .padding(.vertical, 16)
         .contentShape(Rectangle())
     }

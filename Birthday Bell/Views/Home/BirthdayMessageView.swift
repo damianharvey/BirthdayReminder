@@ -169,6 +169,17 @@ struct BirthdayMessageView: View {
                         .foregroundColor(AppTheme.accent)
                 }
                 .disabled(isGenerating)
+
+                Button {
+                    sendWhatsApp(to: phone.number, body: message)
+                } label: {
+                    Image("whatsapp")
+                        .renderingMode(.template)
+                        .resizable()
+                        .frame(width: 22, height: 22)
+                        .foregroundColor(AppTheme.accent)
+                }
+                .disabled(isGenerating)
             }
 
             if let email = friend.primaryEmail {
@@ -316,6 +327,14 @@ struct BirthdayMessageView: View {
     private func sendEmail(to address: String, body: String) {
         let encoded = body.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
         if let url = URL(string: "mailto:\(address)?body=\(encoded)") {
+            UIApplication.shared.open(url)
+        }
+    }
+
+    private func sendWhatsApp(to number: String, body: String) {
+        let clean = number.filter(\.isNumber)
+        let encoded = body.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
+        if let url = URL(string: "https://wa.me/\(clean)?text=\(encoded)") {
             UIApplication.shared.open(url)
         }
     }
