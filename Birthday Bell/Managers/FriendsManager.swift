@@ -65,6 +65,14 @@ class FriendsManager: ObservableObject {
 
     // MARK: - Derived lists
 
+    var friendsSortedByLastName: [Friend] {
+        friends.sorted {
+            let last = $0.lastName.localizedCompare($1.lastName)
+            if last != .orderedSame { return last == .orderedAscending }
+            return $0.firstName.localizedCompare($1.firstName) == .orderedAscending
+        }
+    }
+
     var friendsWithBirthday: [Friend] {
         friends
             .filter { $0.birthday != nil }

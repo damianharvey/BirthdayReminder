@@ -53,38 +53,15 @@ struct FriendsView: View {
 
     private var friendsList: some View {
         List {
-            if !friendsManager.friendsWithBirthday.isEmpty {
-                Section {
-                    ForEach(friendsManager.friendsWithBirthday) { friend in
-                        NavigationLink { FriendDetailView(friend: friend) } label: {
-                            FriendRow(friend: friend, showBirthday: true)
-                        }
-                        .listRowBackground(AppTheme.surface)
-                        .listRowSeparatorTint(AppTheme.divider)
-                    }
-                    .onDelete { offsets in
-                        friendsManager.delete(at: offsets, from: friendsManager.friendsWithBirthday)
-                    }
-                } header: {
-                    SectionHeader(title: "With Birthday")
+            ForEach(friendsManager.friendsSortedByLastName) { friend in
+                NavigationLink { FriendDetailView(friend: friend) } label: {
+                    FriendRow(friend: friend, showBirthday: friend.birthday != nil)
                 }
+                .listRowBackground(AppTheme.surface)
+                .listRowSeparatorTint(AppTheme.divider)
             }
-
-            if !friendsManager.friendsWithoutBirthday.isEmpty {
-                Section {
-                    ForEach(friendsManager.friendsWithoutBirthday) { friend in
-                        NavigationLink { FriendDetailView(friend: friend) } label: {
-                            FriendRow(friend: friend, showBirthday: false)
-                        }
-                        .listRowBackground(AppTheme.surface)
-                        .listRowSeparatorTint(AppTheme.divider)
-                    }
-                    .onDelete { offsets in
-                        friendsManager.delete(at: offsets, from: friendsManager.friendsWithoutBirthday)
-                    }
-                } header: {
-                    SectionHeader(title: "No Birthday")
-                }
+            .onDelete { offsets in
+                friendsManager.delete(at: offsets, from: friendsManager.friendsSortedByLastName)
             }
         }
         .listStyle(.insetGrouped)
