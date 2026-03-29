@@ -1,4 +1,5 @@
 import Foundation
+import WidgetKit
 
 class FriendsManager: ObservableObject {
     @Published var friends: [Friend] = []
@@ -119,9 +120,6 @@ class FriendsManager: ObservableObject {
         } catch {
             throw ImportError.invalidFormat
         }
-        guard envelope.appBundleID == Bundle.main.bundleIdentifier else {
-            throw ImportError.wrongApp
-        }
         guard envelope.version <= 1 else {
             throw ImportError.unsupportedVersion
         }
@@ -159,12 +157,13 @@ class FriendsManager: ObservableObject {
 
     private func save() {
         guard let data = try? JSONEncoder().encode(friends) else { return }
-        UserDefaults.standard.set(data, forKey: storageKey)
+        SharedStore.sharedDefaults.set(data, forKey: storageKey)
+        WidgetCenter.shared.reloadAllTimelines()
     }
 
     private func load() {
         guard
-            let data = UserDefaults.standard.data(forKey: storageKey),
+            let data = SharedStore.sharedDefaults.data(forKey: storageKey),
             let decoded = try? JSONDecoder().decode([Friend].self, from: data)
         else { return }
         friends = decoded

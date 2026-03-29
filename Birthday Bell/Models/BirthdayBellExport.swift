@@ -5,7 +5,7 @@ import Foundation
 struct BirthdayBellExport: Codable {
     let version: Int
     let exportedAt: Date
-    let appBundleID: String
+    let appBundleID: String?
     let friends: [Friend]
 }
 
@@ -27,15 +27,12 @@ struct ImportResult: Identifiable {
 
 enum ImportError: LocalizedError {
     case invalidFormat
-    case wrongApp
     case unsupportedVersion
 
     var errorDescription: String? {
         switch self {
         case .invalidFormat:
             return "The file could not be read. It may be corrupted or not a valid Birthday Bell file."
-        case .wrongApp:
-            return "This file was not created by Birthday Bell."
         case .unsupportedVersion:
             return "This file was created by a newer version of Birthday Bell. Please update the app."
         }

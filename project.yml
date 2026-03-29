@@ -1,6 +1,6 @@
-name: BirthdayReminder
+name: BirthdayBell
 options:
-  bundleIdPrefix: com.birthdayreminder
+  bundleIdPrefix: com.damianharvey
   deploymentTarget:
     iOS: "16.0"
   xcodeVersion: "16.0"
@@ -11,18 +11,18 @@ settings:
     IPHONEOS_DEPLOYMENT_TARGET: "16.0"
 
 targets:
-  BirthdayReminder:
+  BirthdayBell:
     type: application
     platform: iOS
     deploymentTarget: "16.0"
     sources:
-      - path: BirthdayReminder
+      - path: "Birthday Bell"
         excludes:
           - "**/*.md"
     info:
-      path: BirthdayReminder/Info.plist
+      path: "Birthday Bell/Info.plist"
       properties:
-        CFBundleDisplayName: BirthdayReminder
+        CFBundleDisplayName: Birthday Bell
         CFBundleShortVersionString: "1.0"
         CFBundleVersion: "1"
         UILaunchStoryboardName: LaunchScreen
@@ -30,10 +30,45 @@ targets:
           - UIInterfaceOrientationPortrait
         NSContactsUsageDescription: "Used to import friends' birthdays and contact details."
         NSUserNotificationsUsageDescription: "Used to remind you about upcoming birthdays."
+    entitlements:
+      path: "Birthday Bell/BirthdayBell.entitlements"
+      properties:
+        com.apple.security.application-groups:
+          - group.com.damianharvey.birthdaybell
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.birthdayreminder.app
+        PRODUCT_BUNDLE_IDENTIFIER: com.damianharvey.birthdaybell
         DEVELOPMENT_TEAM: ""
         CODE_SIGN_STYLE: Automatic
-        CODE_SIGNING_REQUIRED: "NO"
-        CODE_SIGNING_ALLOWED: "NO"
+    dependencies:
+      - target: BirthdayBellWidget
+        embed: true
+
+
+  BirthdayBellWidget:
+    type: app-extension
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources:
+      - path: BirthdayBellWidget
+      - path: "Birthday Bell/Models/Friend.swift"
+      - path: "Birthday Bell/Theme/AppTheme.swift"
+      - path: "Birthday Bell/Managers/SharedStore.swift"
+    info:
+      path: BirthdayBellWidget/Info.plist
+      properties:
+        CFBundleDisplayName: BirthdayBellWidget
+        CFBundleShortVersionString: "1.0"
+        CFBundleVersion: "1"
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    entitlements:
+      path: BirthdayBellWidget/BirthdayBellWidget.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.damianharvey.birthdaybell
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.damianharvey.birthdaybell.widget
+        DEVELOPMENT_TEAM: ""
+        CODE_SIGN_STYLE: Automatic

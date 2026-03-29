@@ -6,11 +6,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ```bash
 # Build for simulator
-xcodebuild -scheme BirthdayReminder -destination 'platform=iOS Simulator,id=DFFADDF0-90BD-42C3-8218-89B4128FCBB4' -configuration Debug build
+xcodebuild -scheme BirthdayBell -destination 'platform=iOS Simulator,id=DFFADDF0-90BD-42C3-8218-89B4128FCBB4' -configuration Debug build
 
 # Install and launch on simulator
-xcrun simctl install DFFADDF0-90BD-42C3-8218-89B4128FCBB4 /Users/dharvey/Library/Developer/Xcode/DerivedData/BirthdayReminder-dillfdedwurveyenuxfgjddtmkaq/Build/Products/Debug-iphonesimulator/BirthdayReminder.app
-xcrun simctl launch DFFADDF0-90BD-42C3-8218-89B4128FCBB4 com.birthdayreminder.app
+xcrun simctl install DFFADDF0-90BD-42C3-8218-89B4128FCBB4 /Users/dharvey/Library/Developer/Xcode/DerivedData/BirthdayBell-*/Build/Products/Debug-iphonesimulator/BirthdayBell.app
+xcrun simctl launch DFFADDF0-90BD-42C3-8218-89B4128FCBB4 com.damianharvey.birthdaybell
 
 # Regenerate app icons (requires Pillow: pip3 install Pillow)
 python3 generate_icons.py
@@ -20,7 +20,7 @@ There are no automated tests. The app is built and validated manually via the si
 
 ## Architecture
 
-SwiftUI app (iOS 16+) with three observable managers injected as `@EnvironmentObject` from the root `BirthdayReminderApp`.
+SwiftUI app (iOS 16+) with three observable managers injected as `@EnvironmentObject` from the root `BirthdayBellApp`.
 
 **Managers** (business logic, no UI):
 - `FriendsManager` — CRUD for `Friend` objects, persisted to `UserDefaults` as JSON

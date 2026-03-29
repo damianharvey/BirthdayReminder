@@ -18,6 +18,27 @@ struct HomeView: View {
         upcoming.filter { ($0.daysUntilBirthday ?? 1) > 0 }
     }
 
+    private var futureFriendsByMonth: [(month: String, friends: [Friend])] {
+        let cal = Calendar.current
+        let today = Date()
+        let mf = DateFormatter()
+        mf.dateFormat = "MMMM"
+        var result: [(month: String, friends: [Friend])] = []
+        var monthToIndex: [String: Int] = [:]
+        for friend in futureFriends {
+            guard let days = friend.daysUntilBirthday,
+                  let nextBirthday = cal.date(byAdding: .day, value: days, to: today) else { continue }
+            let monthName = mf.string(from: nextBirthday)
+            if let idx = monthToIndex[monthName] {
+                result[idx].friends.append(friend)
+            } else {
+                monthToIndex[monthName] = result.count
+                result.append((month: monthName, friends: [friend]))
+            }
+        }
+        return result
+    }
+
     var body: some View {
         NavigationStack {
             ZStack {
@@ -39,10 +60,10 @@ struct HomeView: View {
                             }
 
                             if !futureFriends.isEmpty {
-                                if !todayFriends.isEmpty {
-                                    sectionHeader("Upcoming")
+                                ForEach(futureFriendsByMonth, id: \.month) { group in
+                                    sectionHeader(group.month)
+                                    cardList(group.friends, showDots: false)
                                 }
-                                cardList(futureFriends, showDots: false)
                             }
                         }
 

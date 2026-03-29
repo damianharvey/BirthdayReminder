@@ -58,9 +58,13 @@ struct Friend: Identifiable, Codable {
 
     var birthdayString: String? {
         guard let birthday = birthday else { return nil }
-        let f = DateFormatter()
-        f.dateFormat = "MMMM d"
-        return f.string(from: birthday)
+        let day = Calendar.current.component(.day, from: birthday)
+        let nf = NumberFormatter()
+        nf.numberStyle = .ordinal
+        let ordinalDay = nf.string(from: NSNumber(value: day)) ?? "\(day)"
+        let mf = DateFormatter()
+        mf.dateFormat = "MMMM yyyy"
+        return "\(ordinalDay) \(mf.string(from: birthday))"
     }
 
     var primaryPhone: PhoneNumber? { phoneNumbers.first }

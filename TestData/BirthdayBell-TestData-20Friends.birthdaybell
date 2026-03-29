@@ -1,0 +1,242 @@
+{
+  "version": 1,
+  "exportedAt": "2026-03-29T00:00:00Z",
+  "appBundleID": "com.damianharvey.birthdaybell",
+  "friends": [
+    {
+      "id": "A1B2C3D4-0001-0001-0001-000000000001",
+      "firstName": "Alice",
+      "lastName": "Nguyen",
+      "birthday": "1988-04-03T00:00:00Z",
+      "phoneNumbers": [
+        { "id": "B1000001-0000-0000-0000-000000000001", "label": "mobile", "number": "+61 412 000 001" }
+      ],
+      "emailAddresses": [
+        { "id": "C1000001-0000-0000-0000-000000000001", "label": "home", "email": "alice.nguyen@example.com" }
+      ],
+      "reminderDays": [7, 1]
+    },
+    {
+      "id": "A1B2C3D4-0002-0002-0002-000000000002",
+      "firstName": "Benjamin",
+      "lastName": "Okafor",
+      "birthday": "1975-07-19T00:00:00Z",
+      "phoneNumbers": [
+        { "id": "B1000002-0000-0000-0000-000000000002", "label": "mobile", "number": "+61 412 000 002" }
+      ],
+      "emailAddresses": [],
+      "reminderDays": []
+    },
+    {
+      "id": "A1B2C3D4-0003-0003-0003-000000000003",
+      "firstName": "Charlotte",
+      "lastName": "Müller",
+      "birthday": "1993-01-28T00:00:00Z",
+      "phoneNumbers": [],
+      "emailAddresses": [
+        { "id": "C1000003-0000-0000-0000-000000000003", "label": "work", "email": "charlotte.muller@example.com" }
+      ],
+      "reminderDays": [3]
+    },
+    {
+      "id": "A1B2C3D4-0004-0004-0004-000000000004",
+      "firstName": "Daniel",
+      "lastName": "Ferreira",
+      "birthday": "1982-11-11T00:00:00Z",
+      "phoneNumbers": [
+        { "id": "B1000004-0000-0000-0000-000000000004", "label": "mobile", "number": "+61 412 000 004" }
+      ],
+      "emailAddresses": [
+        { "id": "C1000004-0000-0000-0000-000000000004", "label": "home", "email": "daniel.ferreira@example.com" }
+      ],
+      "reminderDays": []
+    },
+    {
+      "id": "A1B2C3D4-0005-0005-0005-000000000005",
+      "firstName": "Evelyn",
+      "lastName": "Park",
+      "birthday": "1999-06-05T00:00:00Z",
+      "phoneNumbers": [],
+      "emailAddresses": [],
+      "reminderDays": [14]
+    },
+    {
+      "id": "A1B2C3D4-0006-0006-0006-000000000006",
+      "firstName": "Frank",
+      "lastName": "Kowalski",
+      "birthday": "1967-09-23T00:00:00Z",
+      "phoneNumbers": [
+        { "id": "B1000006-0000-0000-0000-000000000006", "label": "home", "number": "+61 412 000 006" }
+      ],
+      "emailAddresses": [
+        { "id": "C1000006-0000-0000-0000-000000000006", "label": "work", "email": "frank.kowalski@example.com" }
+      ],
+      "reminderDays": []
+    },
+    {
+      "id": "A1B2C3D4-0007-0007-0007-000000000007",
+      "firstName": "Grace",
+      "lastName": "Osei",
+      "birthday": "2001-02-14T00:00:00Z",
+      "phoneNumbers": [
+        { "id": "B1000007-0000-0000-0000-000000000007", "label": "mobile", "number": "+61 412 000 007" }
+      ],
+      "emailAddresses": [],
+      "reminderDays": [1]
+    },
+    {
+      "id": "A1B2C3D4-0008-0008-0008-000000000008",
+      "firstName": "Henry",
+      "lastName": "Johansson",
+      "birthday": "1978-12-30T00:00:00Z",
+      "phoneNumbers": [],
+      "emailAddresses": [
+        { "id": "C1000008-0000-0000-0000-000000000008", "label": "home", "email": "henry.johansson@example.com" }
+      ],
+      "reminderDays": [7]
+    },
+    {
+      "id": "A1B2C3D4-0009-0009-0009-000000000009",
+      "firstName": "Isabella",
+      "lastName": "Santos",
+      "birthday": "1995-08-08T00:00:00Z",
+      "phoneNumbers": [
+        { "id": "B1000009-0000-0000-0000-000000000009", "label": "mobile", "number": "+61 412 000 009" }
+      ],
+      "emailAddresses": [
+        { "id": "C1000009-0000-0000-0000-000000000009", "label": "home", "email": "isabella.santos@example.com" }
+      ],
+      "reminderDays": []
+    },
+    {
+      "id": "A1B2C3D4-0010-0010-0010-000000000010",
+      "firstName": "James",
+      "lastName": "Patel",
+      "birthday": "1971-03-17T00:00:00Z",
+      "phoneNumbers": [
+        { "id": "B1000010-0000-0000-0000-000000000010", "label": "mobile", "number": "+61 412 000 010" },
+        { "id": "B1000010-0000-0000-0000-000000000011", "label": "work", "number": "+61 2 9000 0010" }
+      ],
+      "emailAddresses": [
+        { "id": "C1000010-0000-0000-0000-000000000010", "label": "work", "email": "james.patel@example.com" }
+      ],
+      "reminderDays": [5]
+    },
+    {
+      "id": "A1B2C3D4-0011-0011-0011-000000000011",
+      "firstName": "Kaito",
+      "lastName": "Yamamoto",
+      "birthday": "1990-05-22T00:00:00Z",
+      "phoneNumbers": [],
+      "emailAddresses": [],
+      "reminderDays": []
+    },
+    {
+      "id": "A1B2C3D4-0012-0012-0012-000000000012",
+      "firstName": "Layla",
+      "lastName": "Hassan",
+      "birthday": "1985-10-10T00:00:00Z",
+      "phoneNumbers": [
+        { "id": "B1000012-0000-0000-0000-000000000012", "label": "mobile", "number": "+61 412 000 012" }
+      ],
+      "emailAddresses": [
+        { "id": "C1000012-0000-0000-0000-000000000012", "label": "home", "email": "layla.hassan@example.com" }
+      ],
+      "reminderDays": [7, 3]
+    },
+    {
+      "id": "A1B2C3D4-0013-0013-0013-000000000013",
+      "firstName": "Marcus",
+      "lastName": "Andersen",
+      "birthday": "2003-04-01T00:00:00Z",
+      "phoneNumbers": [],
+      "emailAddresses": [
+        { "id": "C1000013-0000-0000-0000-000000000013", "label": "home", "email": "marcus.andersen@example.com" }
+      ],
+      "reminderDays": []
+    },
+    {
+      "id": "A1B2C3D4-0014-0014-0014-000000000014",
+      "firstName": "Natalie",
+      "lastName": "Dubois",
+      "birthday": "1980-06-21T00:00:00Z",
+      "phoneNumbers": [
+        { "id": "B1000014-0000-0000-0000-000000000014", "label": "mobile", "number": "+61 412 000 014" }
+      ],
+      "emailAddresses": [],
+      "reminderDays": [2]
+    },
+    {
+      "id": "A1B2C3D4-0015-0015-0015-000000000015",
+      "firstName": "Oliver",
+      "lastName": "Kimani",
+      "birthday": "1996-09-09T00:00:00Z",
+      "phoneNumbers": [
+        { "id": "B1000015-0000-0000-0000-000000000015", "label": "mobile", "number": "+61 412 000 015" }
+      ],
+      "emailAddresses": [
+        { "id": "C1000015-0000-0000-0000-000000000015", "label": "home", "email": "oliver.kimani@example.com" }
+      ],
+      "reminderDays": []
+    },
+    {
+      "id": "A1B2C3D4-0016-0016-0016-000000000016",
+      "firstName": "Priya",
+      "lastName": "Krishnamurthy",
+      "birthday": "1987-12-01T00:00:00Z",
+      "phoneNumbers": [],
+      "emailAddresses": [
+        { "id": "C1000016-0000-0000-0000-000000000016", "label": "work", "email": "priya.k@example.com" }
+      ],
+      "reminderDays": [7]
+    },
+    {
+      "id": "A1B2C3D4-0017-0017-0017-000000000017",
+      "firstName": "Rafael",
+      "lastName": "Moreau",
+      "birthday": "1963-02-28T00:00:00Z",
+      "phoneNumbers": [
+        { "id": "B1000017-0000-0000-0000-000000000017", "label": "home", "number": "+61 412 000 017" }
+      ],
+      "emailAddresses": [],
+      "reminderDays": []
+    },
+    {
+      "id": "A1B2C3D4-0018-0018-0018-000000000018",
+      "firstName": "Sophie",
+      "lastName": "Nkrumah",
+      "birthday": "2000-07-04T00:00:00Z",
+      "phoneNumbers": [
+        { "id": "B1000018-0000-0000-0000-000000000018", "label": "mobile", "number": "+61 412 000 018" }
+      ],
+      "emailAddresses": [
+        { "id": "C1000018-0000-0000-0000-000000000018", "label": "home", "email": "sophie.nkrumah@example.com" }
+      ],
+      "reminderDays": [1, 7]
+    },
+    {
+      "id": "A1B2C3D4-0019-0019-0019-000000000019",
+      "firstName": "Thomas",
+      "lastName": "Bergström",
+      "birthday": "1974-11-30T00:00:00Z",
+      "phoneNumbers": [
+        { "id": "B1000019-0000-0000-0000-000000000019", "label": "mobile", "number": "+61 412 000 019" }
+      ],
+      "emailAddresses": [
+        { "id": "C1000019-0000-0000-0000-000000000019", "label": "home", "email": "thomas.bergstrom@example.com" }
+      ],
+      "reminderDays": []
+    },
+    {
+      "id": "A1B2C3D4-0020-0020-0020-000000000020",
+      "firstName": "Yuki",
+      "lastName": "Tanaka",
+      "birthday": "1992-08-15T00:00:00Z",
+      "phoneNumbers": [],
+      "emailAddresses": [
+        { "id": "C1000020-0000-0000-0000-000000000020", "label": "home", "email": "yuki.tanaka@example.com" }
+      ],
+      "reminderDays": [3]
+    }
+  ]
+}

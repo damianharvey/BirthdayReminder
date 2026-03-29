@@ -4,13 +4,11 @@ struct MainTabView: View {
     @EnvironmentObject var friendsManager:  FriendsManager
     @EnvironmentObject var settingsManager: SettingsManager
     @State private var selectedTab = 0
+    @State private var tabBarHeight: CGFloat = 0
 
     var upcomingCount: Int {
         friendsManager.upcomingBirthdays(within: settingsManager.upcomingDaysToShow).count
     }
-
-    // Tab bar height + safe area bottom inset
-    private let tabBarHeight: CGFloat = 64
 
     var body: some View {
         ZStack(alignment: .bottom) {
@@ -29,15 +27,24 @@ struct MainTabView: View {
                     .opacity(selectedTab == 2 ? 1 : 0)
                     .allowsHitTesting(selectedTab == 2)
             }
-            // Push content above the tab bar
+            // Push content above the tab bar using its measured height.
             .safeAreaInset(edge: .bottom) {
                 Color.clear.frame(height: tabBarHeight)
             }
 
             CustomTabBar(selectedTab: $selectedTab, badge: upcomingCount)
+                .background(GeometryReader { geo in
+                    Color.clear.preference(key: TabBarHeightKey.self, value: geo.size.height)
+                })
         }
         .ignoresSafeArea(edges: .bottom)
+        .onPreferenceChange(TabBarHeightKey.self) { tabBarHeight = $0 }
     }
+}
+
+private struct TabBarHeightKey: PreferenceKey {
+    static let defaultValue: CGFloat = 0
+    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) { value = nextValue() }
 }
 
 // MARK: - Custom tab bar

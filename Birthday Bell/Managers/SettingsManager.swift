@@ -1,4 +1,5 @@
 import Foundation
+import WidgetKit
 
 class SettingsManager: ObservableObject {
 
@@ -7,11 +8,14 @@ class SettingsManager: ObservableObject {
     }
 
     @Published var upcomingDaysToShow: Int {
-        didSet { UserDefaults.standard.set(upcomingDaysToShow, forKey: "upcomingDaysToShow") }
+        didSet {
+            SharedStore.sharedDefaults.set(upcomingDaysToShow, forKey: SharedStore.upcomingDaysKey)
+            WidgetCenter.shared.reloadAllTimelines()
+        }
     }
 
     init() {
         self.defaultReminderDays = UserDefaults.standard.object(forKey: "defaultReminderDays") as? Int ?? 7
-        self.upcomingDaysToShow  = UserDefaults.standard.object(forKey: "upcomingDaysToShow")  as? Int ?? 30
+        self.upcomingDaysToShow  = SharedStore.sharedDefaults.object(forKey: SharedStore.upcomingDaysKey) as? Int ?? 30
     }
 }

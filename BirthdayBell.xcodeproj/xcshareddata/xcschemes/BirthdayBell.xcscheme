@@ -15,10 +15,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "012CFFDC866FE5657405DA26"
-               BuildableName = "Birthday Bell.app"
-               BlueprintName = "Birthday Bell"
-               ReferencedContainer = "container:Birthday Bell.xcodeproj">
+               BlueprintIdentifier = "D4C532496B500AF5BBAD25F9"
+               BuildableName = "BirthdayBell.app"
+               BlueprintName = "BirthdayBell"
+               ReferencedContainer = "container:BirthdayBell.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -44,10 +44,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "012CFFDC866FE5657405DA26"
-            BuildableName = "Birthday Bell.app"
-            BlueprintName = "Birthday Bell"
-            ReferencedContainer = "container:Birthday Bell.xcodeproj">
+            BlueprintIdentifier = "D4C532496B500AF5BBAD25F9"
+            BuildableName = "BirthdayBell.app"
+            BlueprintName = "BirthdayBell"
+            ReferencedContainer = "container:BirthdayBell.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -61,10 +61,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "012CFFDC866FE5657405DA26"
-            BuildableName = "Birthday Bell.app"
-            BlueprintName = "Birthday Bell"
-            ReferencedContainer = "container:Birthday Bell.xcodeproj">
+            BlueprintIdentifier = "D4C532496B500AF5BBAD25F9"
+            BuildableName = "BirthdayBell.app"
+            BlueprintName = "BirthdayBell"
+            ReferencedContainer = "container:BirthdayBell.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
